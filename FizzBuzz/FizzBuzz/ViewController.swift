@@ -11,11 +11,10 @@ class ViewController: UIViewController {
 
 private extension ViewController {
     func mainFunction() {
-        print("🟢 Hello world!")
-        
         var number = 1
         repeat {
-            if number % 3 == 0 {
+            if number % 3 == 0 ||
+                String(number).contains("3") {
                 print("🟢 Fizz!")
             } else {
                 print(number)
